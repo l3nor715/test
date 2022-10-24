@@ -414,11 +414,16 @@ a {
 }
 
 .footer__links {
+  display: grid;
   text-decoration: none;
   color: #fff;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
+}
+.footer__links-list {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer__links-icons {
