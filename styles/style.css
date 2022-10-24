@@ -444,13 +444,14 @@ h3,
 p,
 img,
 section,
-span {
+span{
   margin: 0;
   padding: 0;
 }
 
 ul,
-li {
+li,
+a {
   margin: 0;
   list-style-type: none;
   padding: 0;
@@ -528,6 +529,7 @@ li {
   font-weight: normal;
 }
 .header__link {
+  color: #2f80ed;
   text-decoration: none;
 
   z-index: 2;
@@ -579,7 +581,7 @@ li {
   font-size: 24px;
   font-weight: 600;
 }
-.two-columns__paragraph__span-accent {
+.two-columns__paragraph_span-accent {
   margin: 30px 0 30px;
 
   line-height: 34px;
@@ -596,6 +598,9 @@ li {
   width: 60%;
 
   text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
 }
 .section-title__text {
   line-height: 1.15;
@@ -646,7 +651,7 @@ li {
 .feynman {
   height: 890px;
 
-  background: url("../images/feynman.png") no-repeat;
+  background: url("../images/feynman.png") no-repeat #f2f2f2;
   background-position: left bottom;
   background-size: 867px, 637px;
 }
@@ -688,14 +693,13 @@ li {
 /* kaufman */
 /* и элемента с модификатором вида ключ-значение */
 .kaufman {
+  padding-bottom: 150px;
   overflow: hidden;
 
   background-color: #1f1f1f ;
   /* НЕ ПО БРИФУ, БЛОК НУЖНО ПРОПИСАТЬ В HTML */
   background-image: url(..//images/kaufman-triangle.svg);
   background-repeat: no-repeat;
-  /* нет ковру */
-  background: cover;
   background-position: 900px 0px;
 
   color: #fff;
@@ -721,26 +725,31 @@ li {
   width: auto;
 }
 /* и элемента с модификатором вида ключ-значение */
-.table__cell-theme-dark {
+.table__cell_theme_dark {
   margin-right: 0;
   margin-top: 80px;
 
   width: 200px;
-
-  color: white;
 }
-.table__heading-theme-dark {
+.table__heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
+}
 /* footer */
 .footer {
   display: flex;
-  padding-top: 60px;
+  padding-top: 60px;  
   padding-bottom: 40px;
 
   min-height: 350px;
+  box-sizing: border-box;
 
   background-color: #1f1f1f;
 }
@@ -755,19 +764,25 @@ li {
 .footer__column-content-copyright {
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   flex-basis: 711px;
   flex-direction: column;
 
 
 }
-.footer__place-logo {
+.logo__place-footer {
+  top: 0;
+  left: 0;
   width: 228px;
   height: 32px;
 
 }
 
 .footer__author-name {
+  position:absolute;
+  bottom: 0;
+
   padding: 18px 0;
   /* Текст */
   color: #fff;
@@ -775,10 +790,19 @@ li {
   font-size: 18px;
   font-weight: normal;
 }
+.footer__column-content-social{
 
+}
 .footer__column-heading {
   margin-bottom: 20px;
 
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer__links {
+  text-decoration: none;
   color: #fff;
   line-height: 30px;
   font-size: 18px;
@@ -789,13 +813,6 @@ li {
 
   width: 16px;
   height: 16px;
-}
-.footer__links-text {
-  text-decoration: none;
-  color: #fff;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: 600;
 }
 
 >>>>>>> 61d318b (iteration(1/4))
