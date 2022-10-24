@@ -20,14 +20,20 @@
         жизни?
         <a class="header__link" href="№">Узнать &rarr;</a>
       </p>
+      <!--  ALT Почему пустой -->
       <img src="./images/header-image.png" alt="" class="header__main-illustration">
       <div class="header__square-pic"></div>
     </header>
     <main class="content">
 
       <section class="description">
+        <!-- место дива более семантичным будет использование тега article
+Подробнее https://webref.ru/html/article
+А чтобы не было ворнинга при валидации,  для секции можно добавить текстовую метку aria-label на языке страницы.
+Подробнее: https://developer.mozilla.org/ru/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute -->
         <div class="two-columns">
           <div class="two-columns__brief">
+            <!-- В брифе написано, что это заголовок -->
             <p>Главные проблемы в обучении</p>
           </div>
           <div class="two-columns__main-text">
@@ -36,6 +42,7 @@
               учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не
               дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.
             </p>
+            <!-- что за пробел после "ВЫВОД:"?Не должно быть пробелов -->
             <p class="two-columns__paragraph_span-accent"><span class="two-columns__span-accent">Вывод: </span>учиться
               тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?
             </p>
@@ -158,6 +165,7 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ul>
+        <!-- АЛТ ДОЛЖЕН БЫТЬ НА ЯЗЫКЕ СТРАНИЦЫ( У ТЕБЯ RU) -->
         <img class="kaufman__triangle" src="./images/kaufman-triangle.svg" alt="triangle">
       </section>
 
@@ -170,7 +178,15 @@
         </div>
         <div class="footer__column-content-info">
           <h2 class="footer__column-heading">О Практикуме</h2>
+          <!-- тут ты не раскрыл лишнее, должен быть один общий блок nav
+            <nav class="footer__links">
+              <a></a>
+              <a></a>
+              <a></a>
+            </nav>
+          -->
           <nav class="footer__links">
+            <!-- Классы не по брифу, различай link(ссылка) и links(ссылки) -->
             <a href="#" class="footer__links footer__links-text">Главная</a>
           </nav>
           <nav class="footer__links ">
