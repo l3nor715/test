@@ -718,6 +718,7 @@ a {
   font-weight: normal;
 }
 
+
 .feynman__link:hover {
   color: #65a1e9;
   transition: opacity 0.5s;
@@ -830,10 +831,10 @@ a {
 .footer__author-name {
   position: absolute;
   bottom: 0;
-
+  
   padding: 18px 0;
   /* Текст */
-  color: #fff;
+  color: #fff ;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -851,11 +852,18 @@ a {
 }
 
 .footer__links {
+  display: grid;
+}
+.footer__link {
   text-decoration: none;
   color: #fff;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
+}
+.footer__links-list {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer__links-icons {
