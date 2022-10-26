@@ -414,7 +414,7 @@ a {
   font-weight: 600;
 }
 
-.footer__links {
+.footer__column-links {
   display: grid;
 }
 .footer__link {
