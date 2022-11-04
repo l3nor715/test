@@ -2,16 +2,18 @@ HEAD body,
 h1,
 h2,
 h3,
-p,  
+p,
 img,
 section,
 span {
   margin: 0;
   padding: 0;
 }
+
 ::before {
   box-sizing: border-box;
 }
+
 ul,
 li,
 a {
@@ -133,7 +135,7 @@ a {
   z-index: 1;
 }
 
-/*  description */
+/*  description _________________________________________*/
 .description {
   display: flex;
   margin: 100px 0 100px;
@@ -184,10 +186,10 @@ a {
   font-weight: normal;
 }
 
-/*  techniques*/
+/*  techniques _________________________________________*/
 .techniques {
   width: 80%;
-  margin: 0 auto 100px  ;
+  margin: 0 auto 100px;
 }
 
 .cards {
@@ -202,7 +204,8 @@ a {
   justify-items: center;
   width: 240px;
 }
-.cards__item:nth-child(3n+2){
+
+.cards__item:nth-child(3n+2) {
   margin: 0 100px;
   justify-items: center;
   width: 240px;
@@ -226,24 +229,27 @@ a {
 }
 
 .cards__description {
-  text-align: center  ;
+  text-align: center;
   line-height: 23px;
   font-size: 18px;
   font-weight: normal;
 }
-/* Video */
+
+/* Video _________________________________________*/
 .video__iframes {
   display: flex;
   justify-content: space-between;
   margin: 50px auto 0;
   width: 1050px;
 }
+
 .video__iframe {
-   
+
   width: 516px;
   height: 316px;
 }
-/* oakley */
+
+/* oakley _________________________________________*/
 .oakley {
   display: flex;
 
@@ -252,16 +258,17 @@ a {
   padding-bottom: 100px;
 
   justify-content: center;
-  
+
   background-color: #f2f2f2;
 }
-/* digits */
+
+/* digits _________________________________________ */
 .digits {
   margin: 0 auto 100px;
 }
 
 .section-title {
-  margin: auto;
+  margin: 100px auto 0;
   justify-content: space-between;
   width: 60%;
 
@@ -283,6 +290,9 @@ a {
   width: 60%;
 
   text-align: center;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
 }
 
 .section-subtitle__text {
@@ -326,7 +336,7 @@ a {
   padding-top: 20px;
 }
 
-/* feynman */
+/* feynman _________________________________________*/
 .feynman {
   margin-bottom: 100px;
 
@@ -377,7 +387,81 @@ a {
   transition: opacity 0.5s;
 }
 
-/* kaufman */
+/* Khan ___________________________________________-*/
+.khan {
+  padding-top: 105px;
+  background-color: #f2f2f2;
+}
+.khan__container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title {
+  margin-bottom: 50px;
+
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+
+}
+
+.khan__quote {
+  width: 790px;
+  margin-bottom: 36px;
+
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+
+}
+
+.khan__quote-author {
+  margin-bottom: 10px;
+
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+.khan__quote-author-subline {
+  margin-bottom: 68px;
+
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+
+}
+.khan__book-container {
+  display: flex;
+  overflow: hidden;
+  
+}
+.khan__book-pic {
+  overflow: hidden;
+  object-fit: cover;
+  width: 608px;
+  height: 620px;
+  
+}
+.khan__buy-link {
+  margin-left: 48px;
+
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+
+  z-index: 2;
+}
+
+/* kaufman _________________________________________*/
 .kaufman {
   position: relative;
   padding-bottom: 150px;
@@ -396,9 +480,8 @@ a {
 }
 
 .section-title_theme-dark {
-  padding-top: 90px;
   padding-bottom: 20px;
-  /*текст*/
+
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -406,7 +489,6 @@ a {
 }
 
 .section-subtitle_theme-dark {
-  /* текст */
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -416,7 +498,25 @@ a {
 .table_theme-dark {
   margin: 0 auto 90px;
 }
+/* resources____________________________________ */
+.resources {
+  
+}
+.resources__logo-zone {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 217px;
+  width: 1100px;
 
+  justify-content: space-between;
+}
+.resources__link {
+  display: flex ;
+  justify-content: center;
+  width: 270px;
+  height: 38px;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   margin-right: 0;
@@ -441,7 +541,7 @@ a {
   color: #fff;
 }
 
-/* footer */
+/* footer _________________________________________ */
 .footer {
   display: flex;
   padding-top: 60px;
