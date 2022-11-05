@@ -374,7 +374,7 @@ a {
 
   padding-right: 48px;
 
-  text-decoration: none;
+  text-decoration: none;  
   color: #2f80ed;
   line-height: 51px;
   font-size: 36px;
@@ -382,8 +382,8 @@ a {
 }
 
 
-.feynman__link:hover {
-  color: #65a1e9;
+.link:hover {
+  opacity: 0.8;
   transition: opacity 0.5s;
 }
 
