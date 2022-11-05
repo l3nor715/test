@@ -383,8 +383,8 @@ a {
 
 
 .link:hover {
-  opacity: 0.8;
-  transition: opacity 0.5s;
+  opacity: 0.5;
+  
 }
 
 /* Khan ___________________________________________-*/
@@ -451,6 +451,7 @@ a {
 }
 .khan__buy-link {
   margin-left: 48px;
+  height: fit-content;
 
   line-height: 42px;
   font-size: 30px;
